@@ -1,0 +1,33 @@
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start:watch": "vite",
+    "start:build": "vite preview",
+    "build": "vite build",
+    "format": "prettier --write \"src/**/*.{ts,json,css,scss,svelte}\"",
+    "lint": "concurrently -n check,lint, -c \"cyan.bold,green.bold\" \"svelte-check --tsconfig ./tsconfig.json\" \"eslint --ext .js,.jsx,.ts,.tsx,.svelte ./src\""
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+    "@tsconfig/svelte": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "concurrently": "^6.3.0",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "svelte": "^3.37.0",
+    "svelte-check": "^2.1.0",
+    "svelte-preprocess": "^4.7.2",
+    "tslib": "^2.2.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  }
+}
