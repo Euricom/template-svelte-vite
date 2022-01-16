@@ -5,13 +5,7 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 2019,
   },
-  extends: [
-    'airbnb-base',
-    'eslint:recommended',
-    'plugin:eslint-comments/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
+  extends: ['airbnb-base', 'plugin:eslint-comments/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   plugins: ['svelte3', '@typescript-eslint'],
   ignorePatterns: ['*.cjs'],
   overrides: [
