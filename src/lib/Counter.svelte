@@ -3,7 +3,6 @@ let count = 0;
 const increment = () => {
   count += 1;
 };
-var x = 10;
 </script>
 
 <button on:click={increment}>
