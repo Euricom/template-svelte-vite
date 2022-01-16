@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "start:watch": "vite",
     "start:build": "vite preview",
     "build": "vite build",
